@@ -1,0 +1,72 @@
+
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+</head>
+<body>
+  <div id="scroll">
+    <ul> 
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+    </ul> 
+  </div>
+  <script>
+
+  </script>
+</body>
+</html>
+
+<style>
+#scroll {
+    height: 100%;
+    overflow: scroll;
+    padding: 10px;
+}
+body {overflow-y:hidden;}
+
+</style>
+
+
+<script>
+scroll();
+// scroll metkod
+function scroll(){
+  var height = $('#scroll').outerHeight();
+
+  $('#scroll').on('scroll', function() {
+    if((this.scrollTop + height) == this.scrollHeight) {
+      console.log("呼ばれた")
+      for(var i =0; i< 20; i++){
+        $("#scroll").append(i+'<li>sssss</li>');
+      }
+    }
+  });
+}
+
+</script>
