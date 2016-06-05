@@ -1,0 +1,42 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
+   <script src="js/jqModal.min.js"></script>
+   <script src="js/jqModal.js"></script>
+   <script src="js/setting.js"></script>
+   <script src="js/scroll.js"></script>
+</head>
+<body>
+<div id="overlay">
+</div>
+<div id="btn">click</div>
+  <div id="scroll">
+  </div>
+<script>
+$(document).on("click" , "#btn", function() {
+  $("#overlay").append("<p>bokuhatako</p>");　/*ふわっと表示*/
+
+  $("#overlay").fadeIn();　/*ふわっと表示*/
+});
+$(document).on("click" , "#overlay" ,function() {
+  $("#overlay").fadeOut();　/*ふわっと消える*/
+});
+</script>
+<style>
+#overlay{
+  display: none;
+  width: 100%;
+  height:100%;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  z-index: 3000;
+  background: rgba(0,0,0,0.7);
+}
+
+</style>
+</body>
+</html>
