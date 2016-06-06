@@ -1,3 +1,4 @@
+<!DOCTYPE>
 <html>
 <head>
   <meta charset="UTF-8">
@@ -6,7 +7,7 @@
 </head>
 <body>
   <div id="scroll">
-    <ul> 
+    <ul>
       <li>test</li>
       <li>test</li>
       <li>test</li>
@@ -32,7 +33,48 @@
       <li>test</li>
       <li>test</li>
       <li>test</li>
-    </ul> 
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+      <li>test</li>
+    </ul>
   </div>
   <script>
 
@@ -52,12 +94,10 @@ body {overflow-y:hidden;}
 
 
 <script>
-scroll();
-// scroll metkod
-function scroll(){
   var height = $('#scroll').outerHeight();
 
   $('#scroll').on('scroll', function() {
+    console.log("s")
     if((this.scrollTop + height) == this.scrollHeight) {
       console.log("呼ばれた")
       for(var i =0; i< 20; i++){
@@ -65,6 +105,5 @@ function scroll(){
       }
     }
   });
-}
 
 </script>
