@@ -17,27 +17,33 @@
 $(document).ready(function() {
 $("#myform").validate();
 });
+
 </script>
 </head>
 <body>
-<dic class="hoge">
-  <div class="btn-group open">
-    <a class="btn btn-primary" href="#"><i class="fa fa-user fa-fw"></i> User</a>
-    <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
-      <span class="fa fa-caret-down" title="Toggle dropdown menu"></span>
-    </a>
+
+  <ul class="dropdown">
+  <li><a class="dropdown-toggle" data-toggle="dropdown" href="#">
+  	<i class="fa fa-user fa-fw"></i><b class="caret"></b>
+
     <ul class="dropdown-menu">
-      <li><a href="#"><i class="fa fa-pencil fa-fw"></i> Edit</a></li>
-      <li><a href="#"><i class="fa fa-trash-o fa-fw"></i> Delete</a></li>
-      <li><a href="#"><i class="fa fa-ban fa-fw"></i> Ban</a></li>
-      <li class="divider"></li>
-      <li><a href="#"><i class="fa fa-unlock"></i> Make admin</a></li>
-    </ul>
-  </div>
-</div>
+  		<li><a href="#">メニュー1-1</a></li>
+  		<li><a href="#">メニュー1-2</a></li>
+  		<li><a href="#">メニュー1-3</a></li>
+  	  <li><a href="#">メニュー1-4</a></li>
+      <li><a href="#">メニュー1-5</a></li>
+  	</ul>
+  </li>
+  </ul>
 <form id="myform" >
   <input type="text" class="required" name="comment"/>
   <input type="submit" />
 </form>
 </body>
+<style>
+ul{
+  display: block;
+}
+
+</style>
 </html>
